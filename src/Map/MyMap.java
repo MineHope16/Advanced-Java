@@ -45,13 +45,9 @@ public class MyMap {
 		
 		//Getting all the values in the Map
 		System.out.println(m.values());
-		
-		Integer[] arr = new Integer[m.size()];
-		int index = 0;
-		
-		for (Integer i : m.keySet()) {
-			arr[index] = i;
-			index += 1;
-		}
+
+		//Assigning the map to another map
+		n.putAll(m);
+		System.out.println(n.get(105));		
 	}
 }
